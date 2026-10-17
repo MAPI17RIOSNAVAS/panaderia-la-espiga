@@ -8,6 +8,7 @@ import { SaludController } from './salud.controller.js';
 import { UsuariosModule } from './usuarios/usuarios.module.js';
 import { PedidosModule } from './pedidos/pedidos.module.js';
 import { ChatModule } from './chat/chat.module.js';
+import { McpModule } from './mcp/mcp.module.js';
 @Module({
   imports: [
     TypeOrmModule.forRoot(opcionesBaseDatos),
@@ -17,6 +18,7 @@ import { ChatModule } from './chat/chat.module.js';
     UsuariosModule,
     PedidosModule,
     ChatModule,
+    McpModule,
   ],
   controllers: [SaludController],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
