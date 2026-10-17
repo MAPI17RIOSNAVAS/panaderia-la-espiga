@@ -1,0 +1,8 @@
+node_modules/
+dist/
+pruebas/.token-*
+pruebas/resultados-acceso.csv
+solucion/
+.env
+postgres/
+solucion/
