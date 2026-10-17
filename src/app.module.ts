@@ -7,6 +7,7 @@ import { NegocioModule } from './negocio/negocio.module.js';
 import { SaludController } from './salud.controller.js';
 import { UsuariosModule } from './usuarios/usuarios.module.js';
 import { PedidosModule } from './pedidos/pedidos.module.js';
+import { ChatModule } from './chat/chat.module.js';
 @Module({
   imports: [
     TypeOrmModule.forRoot(opcionesBaseDatos),
@@ -15,6 +16,7 @@ import { PedidosModule } from './pedidos/pedidos.module.js';
     NegocioModule,
     UsuariosModule,
     PedidosModule,
+    ChatModule,
   ],
   controllers: [SaludController],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
